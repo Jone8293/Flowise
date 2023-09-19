@@ -19,7 +19,7 @@ class AzureMLChatModels implements INode {
         this.name = 'azureMlChatOnlineEndpoint';
         this.version = 1.0;
         this.type = 'AzureMLChatOnlineEndpoint';
-        this.icon = 'azureMlChatOnlineEndpoint.png';
+        this.icon = 'azure.png';
         this.category = 'Chat Models';
         this.description = 'Wrapper around AzureML large language models that use the Chat endpoint';
         this.baseClasses = [this.type, ...getBaseClasses(AzureMLChatOnlineEndpoint)];
