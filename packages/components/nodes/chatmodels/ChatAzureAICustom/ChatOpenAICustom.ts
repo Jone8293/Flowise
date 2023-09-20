@@ -77,7 +77,8 @@ class AzureMLChatModels implements INode {
             top_p: parseFloat(topP)
         };
 
-        const model = new AzureMLChatOnlineEndpoint(endpoint_url, endpoint_api_key, Content_Formatter: LlamaContentFormatter);
+       const model = new AzureMLChatOnlineEndpoint(endpoint_url, endpoint_api_key, {Content_Formatter: LlamaContentFormatter});
+
         return model;
     }
 }
